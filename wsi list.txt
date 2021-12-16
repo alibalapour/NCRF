@@ -3,12 +3,9 @@ Tumor_102
 Tumor_103
 Tumor_104
 Tumor_105
-Tumor_106
-Tumor_107
 Normal_141
 Normal_142
 Normal_147
 Normal_148
 Normal_151
-Normal_155
-Normal_156
+

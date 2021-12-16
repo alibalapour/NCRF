@@ -20,6 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78d0c281-6d80-4c1f-a371-03e949c875d8" name="Default Changelist" comment="update patch_gen.py">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wsi list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wsi list.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wsi/bin/patch_gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/wsi/bin/patch_gen.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +59,35 @@
       <option name="project" value="LOCAL" />
       <updated>1639652913994</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update patch_gen.py">
+      <created>1639653010282</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1639653010282</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update patch_gen.py">
+      <created>1639653044174</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1639653044174</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update patch_gen.py">
+      <created>1639653129851</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1639653129851</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update patch_gen.py">
+      <created>1639653164247</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1639653164247</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,10 +106,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="update patch_gen.py" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="92" key="Vcs.Push.Dialog.v2" timestamp="1639652916322">
+    <state x="275" y="92" key="Vcs.Push.Dialog.v2" timestamp="1639655668614">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="92" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1639652916322" />
+    <state x="275" y="92" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1639655668614" />
     <state x="490" y="273" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1639652840256">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
