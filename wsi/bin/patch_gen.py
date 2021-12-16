@@ -35,6 +35,7 @@ def process(opts):
     y = int(int(y_center) - args.patch_size / 2)
     wsi_path = os.path.join(args.wsi_path, pid + '.tif')
     wsi_path = str.lower(wsi_path)
+    print(wsi_path)
     slide = openslide.OpenSlide(wsi_path)
     img = slide.read_region(
         (x, y), args.level,
