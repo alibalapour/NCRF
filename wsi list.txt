@@ -5,9 +5,6 @@ Tumor_104
 Tumor_105
 Tumor_106
 Tumor_107
-Tumor_108
-Tumor_109
-Tumor_110
 Normal_141
 Normal_142
 Normal_147
@@ -15,6 +12,3 @@ Normal_148
 Normal_151
 Normal_155
 Normal_156
-Normal_158
-Normal_159
-Normal_160
