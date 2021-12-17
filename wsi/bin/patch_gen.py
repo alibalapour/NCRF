@@ -64,8 +64,11 @@ def run(args):
     opts_list = []
     infile = open(args.coords_path)
     for i, line in enumerate(infile):
-        pid, x_center, y_center = line.strip('\n').split(',')
-        opts_list.append((i, pid, x_center, y_center, args))
+        try:
+            pid, x_center, y_center = line.strip('\n').split(',')
+            opts_list.append((i, pid, x_center, y_center, args))
+        except:
+            continue
     infile.close()
 
     pool = Pool(processes=args.num_process)
