@@ -1,10 +1,8 @@
 Tumor_101
-Tumor_102
 Tumor_103
 Tumor_104
 Tumor_105
 Normal_141
-Normal_142
 Normal_147
 Normal_148
 Normal_151
