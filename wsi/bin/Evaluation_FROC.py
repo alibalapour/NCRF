@@ -167,7 +167,7 @@ def computeFROC(FROC_data):
         total_sensitivity:  A list containig overall sensitivity of the system
         for different thresholds
     """
-    
+    print(FROC_data)
     unlisted_FPs = [item for sublist in FROC_data[1] for item in sublist]
     unlisted_TPs = [item for sublist in FROC_data[2] for item in sublist] 
     

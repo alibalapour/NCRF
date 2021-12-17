@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78d0c281-6d80-4c1f-a371-03e949c875d8" name="Default Changelist" comment="update tissue_mask.py">
+    <list default="true" id="78d0c281-6d80-4c1f-a371-03e949c875d8" name="Default Changelist" comment="update probs_map.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wsi/bin/probs_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/wsi/bin/probs_map.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wsi/bin/Evaluation_FROC.py" beforeDir="false" afterPath="$PROJECT_DIR$/wsi/bin/Evaluation_FROC.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639736819192</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="update probs_map.py">
+      <created>1639738786573</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1639738786573</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,17 +155,18 @@
     <MESSAGE value="update patch_gen.py" />
     <MESSAGE value="update wsi_list" />
     <MESSAGE value="update tissue_mask.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="update tissue_mask.py" />
+    <MESSAGE value="update probs_map.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="update probs_map.py" />
   </component>
   <component name="WindowStateProjectService">
     <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1639664463840">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1639664463840" />
-    <state x="275" y="92" key="Vcs.Push.Dialog.v2" timestamp="1639736821817">
+    <state x="275" y="92" key="Vcs.Push.Dialog.v2" timestamp="1639738789014">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="92" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1639736821817" />
+    <state x="275" y="92" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1639738789014" />
     <state x="490" y="273" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1639652840256">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
