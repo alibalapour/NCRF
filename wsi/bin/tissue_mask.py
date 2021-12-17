@@ -24,7 +24,7 @@ parser.add_argument('--RGB_min', default=50, type=int, help='min value for RGB'
 
 def run(args):
     logging.basicConfig(level=logging.INFO)
-
+    print(args.wsi_path)
     slide = openslide.OpenSlide(args.wsi_path)
 
     # note the shape of img_RGB is the transpose of slide.level_dimensions
