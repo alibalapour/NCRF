@@ -229,8 +229,10 @@ if __name__ == "__main__":
         sys.stdout.flush()
         csvDIR = os.path.join(result_folder, case)
         Probs, Xcorr, Ycorr = readCSVContent(csvDIR)
-                
-        is_tumor = case[0:-4] in ground_truth_test
+               
+        ######################### 
+        is_tumor = 'tumor' in case
+        ######################### 
         if (is_tumor):
             maskDIR = os.path.join(mask_folder, case[0:-4]) + '.tif'
             evaluation_mask = computeEvaluationMask(maskDIR, L0_RESOLUTION, EVALUATION_MASK_LEVEL)
