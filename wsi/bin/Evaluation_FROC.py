@@ -220,10 +220,7 @@ if __name__ == "__main__":
     detection_summary = np.zeros((2, len(result_file_list)), dtype=np.object)
 
     ground_truth_test = []
-    ####################################################################
-    # ground_truth_test += [each[0:8] for each in os.listdir(mask_folder) if each.endswith('.tif')]
-    ground_truth_test += [each[0:9] for each in os.listdir(mask_folder) if each.endswith('.tif')]
-    ####################################################################
+    ground_truth_test += [each[0:8] for each in os.listdir(mask_folder) if each.endswith('.tif')]
     ground_truth_test = set(ground_truth_test)
 
     caseNum = 0
