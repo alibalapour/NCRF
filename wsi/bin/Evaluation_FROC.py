@@ -201,7 +201,7 @@ def plotFROC(total_FPs, total_sensitivity):
     plt.ylabel('Metastasis detection sensitivity', fontsize=12)
     fig.suptitle('Free response receiver operating characteristic curve', fontsize=12)
     plt.plot(total_FPs, total_sensitivity, '-', color='#000000')
-    plt.save_fig('plot.png')
+    plt.savefig('plot.png')
     plt.show()
 
 
