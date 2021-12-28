@@ -243,8 +243,7 @@ if __name__ == "__main__":
             evaluation_mask = computeEvaluationMask(maskDIR, L0_RESOLUTION, 0)
             ############################################################################
             evaluation_mask = evaluation_mask.T
-            img = Image.fromarray(evaluation_mask)
-            img.save('test.png')
+            print(np.max(evaluation_mask))
             ############################################################################
             ITC_labels = computeITCList(evaluation_mask, L0_RESOLUTION, 0)
         else:
