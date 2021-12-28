@@ -240,8 +240,8 @@ if __name__ == "__main__":
         is_tumor = case[0:-4] in ground_truth_test
         if (is_tumor):
             maskDIR = os.path.join(mask_folder, case[0:-4]) + '.tif'
-            evaluation_mask = computeEvaluationMask(maskDIR, L0_RESOLUTION, EVALUATION_MASK_LEVEL)
-            ITC_labels = computeITCList(evaluation_mask, L0_RESOLUTION, EVALUATION_MASK_LEVEL)
+            evaluation_mask = computeEvaluationMask(maskDIR, L0_RESOLUTION, 0)
+            ITC_labels = computeITCList(evaluation_mask, L0_RESOLUTION, 0)
         else:
             evaluation_mask = 0
             ITC_labels = []
