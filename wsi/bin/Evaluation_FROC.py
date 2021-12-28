@@ -152,7 +152,7 @@ def compute_FP_TP_Probs(Ycorr, Xcorr, Probs, is_tumor, evaluation_mask, Isolated
             FP_counter += 1
 
     num_of_tumors = max_label - len(Isolated_Tumor_Cells);
-    print(FP_summary)
+    print(TP_probs)
     return FP_probs, TP_probs, num_of_tumors, detection_summary, FP_summary
 
 
@@ -246,7 +246,6 @@ if __name__ == "__main__":
             evaluation_mask = evaluation_mask.T
             ############################################################################
             ITC_labels = computeITCList(evaluation_mask, L0_RESOLUTION, 0)
-            print(ITC_labels)
         else:
             evaluation_mask = 0
             ITC_labels = []
