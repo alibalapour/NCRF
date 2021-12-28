@@ -243,7 +243,10 @@ if __name__ == "__main__":
             evaluation_mask = computeEvaluationMask(maskDIR, L0_RESOLUTION, 0)
             ############################################################################
             evaluation_mask = evaluation_mask.T
-            print(np.max(evaluation_mask))
+            for i in eange(evaluation_mask.shape[0]):
+                for j in range(evaluation_mask.shape[1]):
+                    print(evaluation_mask[i, j], ends=' ')
+                print()
             ############################################################################
             ITC_labels = computeITCList(evaluation_mask, L0_RESOLUTION, 0)
         else:
