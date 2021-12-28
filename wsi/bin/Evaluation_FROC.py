@@ -213,7 +213,7 @@ if __name__ == "__main__":
     result_file_list += [each for each in os.listdir(result_folder) if each.endswith('.csv')]
 
     ##################################################
-    EVALUATION_MASK_LEVEL = 6  # Image level at which the evaluation is done
+    EVALUATION_MASK_LEVEL = 0  # Image level at which the evaluation is done
     ##################################################
     L0_RESOLUTION = 0.243  # pixel resolution at level 0
 
@@ -223,11 +223,12 @@ if __name__ == "__main__":
 
     ground_truth_test = []
     ##################################################
-    # ground_truth_test += [each[0:8] for each in os.listdir(mask_folder) if each.endswith('.tif')]
-    ground_truth_test += [each[0:8] for each in os.listdir(mask_folder) if each.endswith('.png')]
+    ground_truth_test += [each[0:8] for each in os.listdir(mask_folder) if each.endswith('.tif')]
+    # ground_truth_test += [each[0:8] for each in os.listdir(mask_folder) if each.endswith('.png')]
     ##################################################
     ground_truth_test = set(ground_truth_test)
     print(ground_truth_test)
+
     caseNum = 0
     for case in result_file_list:
         print('Evaluating Performance on image:', case[0:-4])
