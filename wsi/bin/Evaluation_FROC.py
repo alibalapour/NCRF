@@ -227,7 +227,7 @@ if __name__ == "__main__":
     ground_truth_test += [each[0:8] for each in os.listdir(mask_folder) if each.endswith('.png')]
     ##################################################
     ground_truth_test = set(ground_truth_test)
-
+    print(ground_truth_test)
     caseNum = 0
     for case in result_file_list:
         print('Evaluating Performance on image:', case[0:-4])
