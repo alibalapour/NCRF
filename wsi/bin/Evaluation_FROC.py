@@ -241,7 +241,7 @@ if __name__ == "__main__":
         if (is_tumor):
             maskDIR = os.path.join(mask_folder, case[0:-4]) + '.tif'
             evaluation_mask = computeEvaluationMask(maskDIR, L0_RESOLUTION, 0)
-            print(evaluation_mask)
+            print(evaluation_mask.shape, evaluation_mask.T.shape)
             ITC_labels = computeITCList(evaluation_mask, L0_RESOLUTION, 0)
         else:
             evaluation_mask = 0
