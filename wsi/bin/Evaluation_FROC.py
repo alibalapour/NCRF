@@ -14,6 +14,7 @@ from scipy import ndimage as nd
 from skimage import measure
 import os
 import sys
+import PIL.Image as Image
 
 
 def computeEvaluationMask(maskDIR, resolution, level):
@@ -242,6 +243,8 @@ if __name__ == "__main__":
             evaluation_mask = computeEvaluationMask(maskDIR, L0_RESOLUTION, 0)
             ############################################################################
             evaluation_mask = evaluation_mask.T
+            img = Image.fromarray(evaluation_mask)
+            img.save('test.png')
             ############################################################################
             ITC_labels = computeITCList(evaluation_mask, L0_RESOLUTION, 0)
         else:
