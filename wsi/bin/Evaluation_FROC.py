@@ -213,7 +213,7 @@ if __name__ == "__main__":
     result_file_list += [each for each in os.listdir(result_folder) if each.endswith('.csv')]
 
     ##################################################
-    EVALUATION_MASK_LEVEL = 0  # Image level at which the evaluation is done
+    EVALUATION_MASK_LEVEL = 6  # Image level at which the evaluation is done
     ##################################################
     L0_RESOLUTION = 0.243  # pixel resolution at level 0
 
