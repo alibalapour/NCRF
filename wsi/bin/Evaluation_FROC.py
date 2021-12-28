@@ -29,7 +29,6 @@ def computeEvaluationMask(maskDIR, resolution, level):
     """
     slide = openslide.open_slide(maskDIR)
     dims = slide.level_dimensions[level]
-    print('dims', dims)
     pixelarray = np.zeros(dims[0] * dims[1], dtype='uint')
     pixelarray = np.array(slide.read_region((0, 0), level, dims))
     distance = nd.distance_transform_edt(255 - pixelarray[:, :, 0])
@@ -242,6 +241,7 @@ if __name__ == "__main__":
         if (is_tumor):
             maskDIR = os.path.join(mask_folder, case[0:-4]) + '.tif'
             evaluation_mask = computeEvaluationMask(maskDIR, L0_RESOLUTION, 0)
+            print(evaluation_mask)
             ITC_labels = computeITCList(evaluation_mask, L0_RESOLUTION, 0)
         else:
             evaluation_mask = 0
