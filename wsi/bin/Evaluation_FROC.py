@@ -29,6 +29,7 @@ def computeEvaluationMask(maskDIR, resolution, level):
     """
     slide = openslide.open_slide(maskDIR)
     dims = slide.level_dimensions[level]
+    print('dims', dims)
     pixelarray = np.zeros(dims[0] * dims[1], dtype='uint')
     pixelarray = np.array(slide.read_region((0, 0), level, dims))
     distance = nd.distance_transform_edt(255 - pixelarray[:, :, 0])
