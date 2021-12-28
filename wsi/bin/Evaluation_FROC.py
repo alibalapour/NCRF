@@ -132,7 +132,6 @@ def compute_FP_TP_Probs(Ycorr, Xcorr, Probs, is_tumor, evaluation_mask, Isolated
     FP_counter = 0
     if (is_tumor):
         for i in range(0, len(Xcorr)):
-            print(len(Xcorr), Ycorr[i], pow(2, level))
             HittedLabel = evaluation_mask[int(Ycorr[i] / pow(2, level)), int(Xcorr[i] / pow(2, level))]
             if HittedLabel == 0:
                 FP_probs.append(Probs[i])
@@ -241,7 +240,9 @@ if __name__ == "__main__":
         if (is_tumor):
             maskDIR = os.path.join(mask_folder, case[0:-4]) + '.tif'
             evaluation_mask = computeEvaluationMask(maskDIR, L0_RESOLUTION, 0)
+            ############################################################################
             evaluation_mask = evaluation_mask.T
+            ############################################################################
             ITC_labels = computeITCList(evaluation_mask, L0_RESOLUTION, 0)
         else:
             evaluation_mask = 0
@@ -256,6 +257,7 @@ if __name__ == "__main__":
         caseNum += 1
 
     # Compute FROC curve
+    print(FROC_data)
     total_FPs, total_sensitivity = computeFROC(FROC_data)
 
     # plot FROC curve
