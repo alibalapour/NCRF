@@ -140,6 +140,7 @@ def compute_FP_TP_Probs(Ycorr, Xcorr, Probs, is_tumor, evaluation_mask, Isolated
                 FP_summary[key] = [Probs[i], Xcorr[i], Ycorr[i]]
                 FP_counter += 1
             elif HittedLabel not in Isolated_Tumor_Cells:
+                print('HittedLabel :', HittedLabel)
                 if (Probs[i] > TP_probs[HittedLabel - 1]):
                     label = 'Label ' + str(HittedLabel)
                     detection_summary[label] = [Probs[i], Xcorr[i], Ycorr[i]]
