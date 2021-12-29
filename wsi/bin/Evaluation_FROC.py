@@ -134,6 +134,7 @@ def compute_FP_TP_Probs(Ycorr, Xcorr, Probs, is_tumor, evaluation_mask, Isolated
     if (is_tumor):
         for i in range(0, len(Xcorr)):
             HittedLabel = evaluation_mask[int(Ycorr[i] / pow(2, level)), int(Xcorr[i] / pow(2, level))]
+            print('Isolated_Tumor_Cells : ', Isolated_Tumor_Cells)
             print('HittedLabel in ', i, ' : ', HittedLabel)
             if HittedLabel == 0:
                 FP_probs.append(Probs[i])
